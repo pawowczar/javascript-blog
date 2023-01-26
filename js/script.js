@@ -19,6 +19,7 @@ function titleClickHandler(event){
    
   
   console.log('clickedElement:', clickedElement);
+  console.log('clickedElement (with plus): ' + clickedElement);
   console.log('Active class added to link');
   
   /* [DONE] remove class 'active' from all articles */
@@ -35,10 +36,13 @@ function titleClickHandler(event){
   /* find the correct article using the selector (value of 'href' attribute) */
   
   const targetArticle = document.querySelector(articleSelector);
-  console.log('targetArticle '+ targetArticle);
+  console.log('targetArticle ' + targetArticle);
+
+  /* Dalczego w Console.log targetArticel wyskakuje Object Htmlelement ?*/
   
   /* add class 'active' to the correct article */
   targetArticle.classList.add('active');
+  
 
 }
 
