@@ -87,15 +87,15 @@ function generateTitleLinks(){
     console.log(linkHTML);
 
     /* insert link into titleList */
-    titleList.innerHTML = titleList.innerHTML + linkHTML;
-    titleList.insertAdjacentHTML('beforebegin', linkHTML);
+    //titleList.innerHTML = titleList.innerHTML + linkHTML;
+    titleList.insertAdjacentHTML('beforeend', linkHTML);
 
     /* insert link into html variable */
-    html = html + linkHTML;
-    console.log(html);
+    //html = html + linkHTML;
+    //console.log(html);
   }
     
-  titleList.innerHTML = html;
+  //titleList.innerHTML = html;
 }
 
 generateTitleLinks();
