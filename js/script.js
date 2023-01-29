@@ -59,9 +59,6 @@ function generateTitleLinks(){
   const titleList = document.querySelector(optTitleListSelector);
   console.log(titleList);
 
-  //function clearMessages(){
-   // document.getElementById('message').titleList;
-  //}
   titleList.innerHTML = '';
  
 
