@@ -106,6 +106,8 @@ for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
 
+const optArticleTagsSelector = '.post-tags .list'; 
+
 function generateTags(){
   /* find all articles */
 
