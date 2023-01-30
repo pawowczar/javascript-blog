@@ -49,7 +49,8 @@ function titleClickHandler(event){
 
 const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
-  optTitleListSelector = '.titles';
+  optTitleListSelector = '.titles', optArticleTagsSelector = '.post-tags .list'; 
+
 
 function generateTitleLinks(){
 
@@ -107,10 +108,6 @@ for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
 
-const optArticleTagsSelector = '.post-tags .list'; 
-
-
-
 function generateTags(){
   
 
@@ -125,6 +122,7 @@ function generateTags(){
     /* find tags wrapper */
     const tagList = article.querySelector(optArticleTagsSelector);
     console.log('taglist' + tagList);
+
 
     /* make html variable with empty string */
     let html = '';
