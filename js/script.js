@@ -94,19 +94,20 @@ function generateTitleLinks(customSelector = ''){
     html = html + linkHTML;
     //console.log(html);
   }
-    
+  const links = document.querySelectorAll('.titles a');
+
+  for(let link of links){
+    link.addEventListener('click', titleClickHandler);
+  }
   // titleList.innerHTML = html;
+ 
 }
 
 
 
 generateTitleLinks();
 
-const links = document.querySelectorAll('.titles a');
 
-for(let link of links){
-  link.addEventListener('click', titleClickHandler);
-}
 
 const optArticleTagsSelector = '.post-tags .list'; 
 
